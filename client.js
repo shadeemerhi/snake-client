@@ -12,6 +12,14 @@ const connect = function() {
     console.log('Server says: ', data);
   });
 
+  conn.on('connect', () => {
+    console.log('Successfully connected to the server.');
+  });
+
+  conn.on('connect', () => {
+    conn.write('Name: SMM');
+  });
+
   return conn;
 }
 
