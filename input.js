@@ -19,6 +19,17 @@ const handleUserInput = (inputKey) => {
   if (inputKey === 'd') {
     connection.write('Move: right');
   }
+
+  // Sending messages
+  if(inputKey === '-') {
+    connection.write('Say: LOL');
+  }
+  if(inputKey === '=') {
+    connection.write('Say: u r garbo');
+  }
+  if(inputKey === '\\') {
+    connection.write('Say: Yum food');
+  }
 }
 
 const setupInput = function(conn) {
