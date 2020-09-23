@@ -17,20 +17,6 @@ const connect = function() {
     conn.write('Name: SMM');
   });
 
-
-  // Experiment - moving the snake as soon connection established
-  // conn.on('connect', () => {
-  //   setInterval(() => {
-  //     conn.write('Move: up');
-  //   }, 500);
-  // });
-
-  // conn.on('connect', () => {
-  //   setInterval(() => {
-  //     conn.write('Move: left');
-  //   }, 200);
-  // });
-
   return conn;
 }
 
